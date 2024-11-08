@@ -90,7 +90,10 @@ input_data = pd.DataFrame([[season, yr, mnth, hr, holiday, weekday, weathersit, 
 predicted_count_mle = model_mle.predict(input_data)[0]
 predicted_count_map = model_map.predict(input_data)[0]
 
-# عرض التوقعات
-st.write(f"التوقع باستخدام نموذج MLE: {predicted_count_mle:.2f} دراجة")
-st.write(f"التوقع باستخدام نموذج MAP: {predicted_count_map:.2f} دراجة")
+# عرض التوقعات مع نسبة الدقة بناءً على R²
+st.write(f"التوقع باستخدام نموذج MLE: {predicted_count_mle:.2f} دراجة (دقة التنبؤ: {r2_mle * 100:.2f}%)")
+st.write(f"التوقع باستخدام نموذج MAP: {predicted_count_map:.2f} دراجة (دقة التنبؤ: {r2_map * 100:.2f}%)")
 
+st.title("نموذج مهمة تدريب مادة التعلم العميق والشبكات العصبونية ")
+st.title("د. سليم الزعبي  ")
+st.title("الباحث . مشهور العباس 202320388 ")
