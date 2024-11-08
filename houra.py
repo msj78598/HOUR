@@ -94,6 +94,7 @@ predicted_count_map = model_map.predict(input_data)[0]
 st.write(f"التوقع باستخدام نموذج MLE: {predicted_count_mle:.2f} دراجة (دقة التنبؤ: {r2_mle * 100:.2f}%)")
 st.write(f"التوقع باستخدام نموذج MAP: {predicted_count_map:.2f} دراجة (دقة التنبؤ: {r2_map * 100:.2f}%)")
 
-st.title("نموذج مهمة تدريب مادة التعلم العميق والشبكات العصبونية ")
-st.title("د. سليم الزعبي  ")
-st.title("الباحث المطور . مشهور العباس 202320388 ")
+# عرض الرسالة النهائية بخط أصغر
+st.markdown("<h4 style='text-align: center; color: black;'>نموذج مهمة تدريب مادة التعلم العميق والشبكات العصبونية</h4>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: black;'>د. سليم الزعبي</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: black;'>الباحث المطور: مشهور العباس 202320388</h5>", unsafe_allow_html=True)
