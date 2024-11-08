@@ -9,7 +9,7 @@ from sklearn.metrics import mean_absolute_error, median_absolute_error, r2_score
 import streamlit as st
 
 # تحميل البيانات
-data = pd.read_csv('C:/hour/hour_modified.csv')
+data = pd.read_csv('hour_modified.csv')
 
 # استكشاف البيانات
 st.title("تحليل بيانات خدمة مشاركة الدراجات")
