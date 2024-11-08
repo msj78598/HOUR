@@ -94,12 +94,3 @@ predicted_count_map = model_map.predict(input_data)[0]
 st.write(f"التوقع باستخدام نموذج MLE: {predicted_count_mle:.2f} دراجة")
 st.write(f"التوقع باستخدام نموذج MAP: {predicted_count_map:.2f} دراجة")
 
-# حفظ التوقعات والنماذج في مجلد المشروع
-input_data.to_csv("C:/hour/التوقعات.csv", index=False)
-pd.DataFrame({'Actual': y_test, 'MLE Predictions': pred_mle, 'MAP Predictions': pred_map}).to_csv("C:/hour/أداء_النماذج.csv", index=False)
-
-import joblib
-joblib.dump(model_mle, 'C:/hour/model_mle.pkl')
-joblib.dump(model_map, 'C:/hour/model_map.pkl')
-
-st.write("تم حفظ التوقعات والنماذج في مجلد المشروع.")
